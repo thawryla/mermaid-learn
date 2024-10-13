@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='mermaid.min.js'></script>
+</head>
+<body>
+    Here is one mermaid diagram:
+    <pre class="mermaid">
+        flowchart RL
+            A@{ shape: manual-file, label: "File Handling"}
+            B@{ shape: manual-input, label: "User Input"}
+            C@{ shape: docs, label: "Multiple Documents"}
+            D@{ shape: procs, label: "Process Automation"}
+            E@{ shape: paper-tape, label: "Paper Records"}
+    </pre>
+
+    And here is another:
+    <pre class="mermaid">
+            graph TD
+            A[Client] -->|tcp_123| B
+            B(Load Balancer)
+            B -->|tcp_456| C[Server1]
+            B -->|tcp_456| D[Server2]
+    </pre>
+
+    <script type="module">
+      //import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>
